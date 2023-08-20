@@ -16,26 +16,6 @@ const Header = ({username}) => {
     const dispatch = useDispatch();
     const [value, setValue] = useState()
     
-    
- 
-
-  // useEffect(() => {
-  //   fetch('http://localhost:4000/api/v1/profile', {
-  //     credentials: 'include',
-  //   }).then(response => {
-  //     response.json().then(userInfo => {
-  //       setUserInfo(userInfo);
-  //     });
-  //   });
-  // }, []);
-
-
-
-
-
-
-
-
     function logout() {
         dispatch(authActions.logout())
         toast.success("Logout Successfully")
