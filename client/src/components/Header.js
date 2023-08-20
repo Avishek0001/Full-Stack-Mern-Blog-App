@@ -16,8 +16,10 @@ const Header = ({username}) => {
     const dispatch = useDispatch();
     const [value, setValue] = useState()
     
-    
-     function logout() {
+   
+
+    function logout() {
+
         dispatch(authActions.logout())
         toast.success("Logout Successfully")
         navigate("/login")
