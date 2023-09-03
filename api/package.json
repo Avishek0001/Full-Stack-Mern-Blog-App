@@ -9,13 +9,13 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix ../client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-<<<<<<< HEAD
-    "build":"npm init"
-=======
-    "build": "npm init"
->>>>>>> dbe814e (modified again for the delete icon)
+    "dev": "concurrently \"npm run server\" \"npm run client\"",  
+
+  "build": "npm init"
+  
+
   },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
