@@ -6,7 +6,6 @@ import toast from 'react-hot-toast';
 
 const BlogCard = ({
   title,
-  description,
   image,
   username,
   time,
@@ -21,7 +20,6 @@ const BlogCard = ({
 const handleDelete = async()=>{
   try{
     const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`,{
-
       method:'DELETE'
     }
     )
@@ -44,13 +42,7 @@ const handleDelete = async()=>{
     <div className='entry container'>
 
       <div className='post'>
-      {userId && (
-        <div className='box'>
-        <EditNoteRoundedIcon onClick={handleEdit}/>
-        <DeleteOutlineIcon onClick={handleDelete}/>
-        </div>
       
-      )}
         <Link to={`/get-blog/${id}`}>
         <img src={image} alt='' />
 
@@ -66,6 +58,13 @@ const handleDelete = async()=>{
         </div>
           {/* <p dangerouslySetInnerHTML={{__html:description}}/> */}
         </div>
+        {userId && (
+        <div className='box'>
+        <EditNoteRoundedIcon onClick={handleEdit}/>
+        <DeleteOutlineIcon onClick={handleDelete}/>
+        </div>
+      
+      )}
       </div>
 
 
