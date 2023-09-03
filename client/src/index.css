@@ -38,7 +38,6 @@ form.input {
   margin-bottom: 5px;
 }
 
-
 div.entry {
   max-width: 100%;
   position: relative;
@@ -52,18 +51,15 @@ div.entry {
   align-items: center;
   padding-left: 20px;
   color: inherit;
-
 }
-
-
-div.box{
+div.box {
   position: absolute;
   height: auto;
   right: 0px;
   bottom: 0px;
   margin: 20px;
   border: solid 1px #000;
-  padding: 5px;  
+  padding: 5px;
 }
 
 
@@ -89,8 +85,8 @@ h2 {
   margin-top: 15px;
   margin-bottom: -20px;
   font-size: 1.5rem;
-  
-  
+
+
 
 }
 
@@ -190,28 +186,30 @@ div.post-page div.author {
 }
 
 @media (max-width: 800px) {
-  div.main{
+  div.main {
     max-width: 100%;
-    
+
   }
+
   div.entry {
     display: flex;
     flex-direction: column;
     height: auto;
-    
+
   }
 
   div.post {
     flex-wrap: wrap;
     gap: 0px;
   }
+
   div.post-page {
     max-width: 100%;
-   width: auto;
+    width: auto;
   }
 
   div.text_description {
-   
+
     width: auto;
   }
 
@@ -227,28 +225,29 @@ div.post-page div.author {
 
 @media (max-width: 600px) {
 
-  div.main{
-    max-width: 100%;   
-    width: 100%; 
+  div.main {
+    max-width: 100%;
+    width: 100%;
   }
 
- 
 
-  div.main h3{
+
+  div.main h3 {
     padding-left: 0%;
     font-size: small;
-}
+  }
 
-  
+
   div.entry {
     max-width: 100%;
     width: auto;
   }
-  div.post{
+
+  div.post {
     flex-wrap: wrap;
     max-width: 100%;
     width: auto;
-    
+
   }
 
   div.post img {
@@ -275,22 +274,22 @@ div.post-page div.author {
 }
 
 @media screen and (max-width: 400px) {
-  div.main{
-    max-width: 100%;    
+  div.main {
+    max-width: 100%;
   }
 
-  div.main h3{
-      padding-left: 0%;
-      font-size: small;
+  div.main h3 {
+    padding-left: 0%;
+    font-size: small;
   }
 
-  
+
   .blog-app-heading {
     font-size: 0.5rem;
     padding-left: 5px;
   }
 
-  
+
   div.entry {
     width: auto;
   }
