@@ -18,6 +18,9 @@ const blogsRoutes = require("./routes/blogsRoute")
 app.use(cors({credentials:true, origin:'http://localhost:3000',methods:["POST", "GET", "PUT", "DELETE"}))
 app.use(express.json())
 app.use(cookieParser())
+app.get("/",(req,res)=>{
+    res.send("HEllo")
+})
 app.use("/api/v1/user",userRoute);
 app.use("/api/v1/blogs",blogsRoutes);
 
