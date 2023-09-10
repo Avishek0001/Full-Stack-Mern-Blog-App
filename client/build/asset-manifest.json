@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a7847286.css",
+    "main.js": "/static/js/main.ead47fe3.js",
+    "static/media/1693752620513Untitled_design.jpg": "/static/media/1693752620513Untitled_design.1f799db69a780eb6a050.jpg",
+    "static/media/1692366061255jio-bgis-webban.jpg": "/static/media/1692366061255jio-bgis-webban.cd75a0b885e9779c75fa.jpg",
+    "static/media/1692187653115chandrayaan-3_launch_b.webp": "/static/media/1692187653115chandrayaan-3_launch_b.be2bc1aa07b4a3a0d74b.webp",
+    "static/media/1693718400241thequint_2023-08_9eaedc96-88e6-4032-aa40-723eef9cfbe5_Aditya_L1_Launch.jpg": "/static/media/1693718400241thequint_2023-08_9eaedc96-88e6-4032-aa40-723eef9cfbe5_Aditya_L1_Launch.2d5d7c77d0ff64ecaa9a.jpg",
+    "static/media/1692197100465pexels-pixabay-36717 (1).jpg": "/static/media/1692197100465pexels-pixabay-36717 (1).fa273077d9093ef92708.jpg",
+    "static/media/1692430302970kg88a3sg_chandrayaan-3-lunar-orbit_625x300_05_August_23.jpg": "/static/media/1692430302970kg88a3sg_chandrayaan-3-lunar-orbit_625x300_05_August_23.5ee79df854874541c3bd.jpg",
+    "static/media/1692197253641PTI08_12_2023_000227A.jpg": "/static/media/1692197253641PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692197655919PTI08_12_2023_000227A.jpg": "/static/media/1692197655919PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692275636909PTI08_12_2023_000227A.jpg": "/static/media/1692275636909PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692342835865PTI08_12_2023_000227A.jpg": "/static/media/1692342835865PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692342916512PTI08_12_2023_000227A.jpg": "/static/media/1692342916512PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692369759213PTI08_12_2023_000227A.jpg": "/static/media/1692369759213PTI08_12_2023_000227A.d20c88a974757a2ae142.jpg",
+    "static/media/1692188390548Chandrayaan-3.jpg": "/static/media/1692188390548Chandrayaan-3.7f485c8080bac540bc9b.jpg",
+    "static/media/1692193896379Chandrayaan-3.jpg": "/static/media/1692193896379Chandrayaan-3.7f485c8080bac540bc9b.jpg",
+    "static/media/1692341412495Chandrayaan-3.jpg": "/static/media/1692341412495Chandrayaan-3.7f485c8080bac540bc9b.jpg",
+    "static/media/1692341846162Chandrayaan-3.jpg": "/static/media/1692341846162Chandrayaan-3.7f485c8080bac540bc9b.jpg",
+    "index.html": "/index.html",
+    "main.a7847286.css.map": "/static/css/main.a7847286.css.map",
+    "main.ead47fe3.js.map": "/static/js/main.ead47fe3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7847286.css",
+    "static/js/main.ead47fe3.js"
+  ]
+}
