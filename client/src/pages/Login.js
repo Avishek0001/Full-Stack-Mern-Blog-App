@@ -25,7 +25,7 @@ const Login = () => {
     event.preventDefault();
     
  
-  const response = await fetch("https://serverside-mern-blog-app.vercel.app/api/v1/user/login", {
+  const response = await fetch("https://serverside-mern-blog-llvozs0h1-avishek0001.vercel.app/api/v1/user/login", {
       method: "POST",
       body: JSON.stringify({        
         email: inputs.email,
