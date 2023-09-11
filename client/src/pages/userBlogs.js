@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const getUserBlogs = async () => {
     try {
       const id = localStorage.getItem('userId')
-      const response = await fetch(`https://serverside-mern-blog-app.vercel.app/api/v1/blogs/user-blog/${id}`, {
+      const response = await fetch(`https://serverside-mern-blog-llvozs0h1-avishek0001.vercel.app/api/v1/blogs/user-blog/${id}`, {
       // const response = await fetch(`http://localhost:4000/api/v1/blogs/user-blog/${id}`, {
         method: "GET",
       })
