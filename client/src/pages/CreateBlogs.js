@@ -22,7 +22,8 @@ const CreateBlogs = () => {
     data.append('image', file.name)
     data.append('image', file)
 
-    const response = await fetch('http://localhost:4000/api/v1/blogs/create-blog', {
+    const response = await fetch('https://serverside-mern-blog-app.vercel.app/api/v1/blogs/create-blog', {
+    // const response = await fetch('http://localhost:4000/api/v1/blogs/create-blog', {
       method: 'POST',
       body: data
     })
