@@ -19,7 +19,8 @@ const BlogCard = ({
 
 const handleDelete = async()=>{
   try{
-    const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`,{
+    const response = await fetch(`https://serverside-mern-blog-app.vercel.app/api/v1/blogs/delete-blog/${id}`,{
+    // const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`,{
       method:'DELETE'
     }
     )
