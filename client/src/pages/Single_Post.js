@@ -8,7 +8,8 @@ const {id} = useParams();
 useEffect(()=>{
   try{
 
-    fetch(`http://localhost:4000/api/v1/blogs/get-blog/${id}`)
+    fetch(`https://serverside-mern-blog-app.vercel.app/api/v1/blogs/get-blog/${id}`)
+    // fetch(`http://localhost:4000/api/v1/blogs/get-blog/${id}`)
     .then((response)=>{
       response.json().then(postInfo=>{
         setPostInfo(postInfo?.blog)
