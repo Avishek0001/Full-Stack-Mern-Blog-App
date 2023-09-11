@@ -7,7 +7,9 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   const getAllBLogs = async ()=>{
-    try{const response = await fetch("http://localhost:4000/api/v1/blogs/all-blogs")
+    try{
+      const response = await fetch("https://serverside-mern-blog-app.vercel.app/api/v1/blogs/all-blogs")
+      // const response = await fetch("http://localhost:4000/api/v1/blogs/all-blogs")
     const data = await response.json();
     if (data?.success) {
       setBlogs(data?.blogs);
