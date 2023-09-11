@@ -20,7 +20,7 @@ const Register = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    try{const response = await fetch("https://serverside-mern-blog-app.vercel.app/api/v1/user/register", {
+    try{const response = await fetch("https://serverside-mern-blog-llvozs0h1-avishek0001.vercel.app/api/v1/user/register", {
     // try{const response = await fetch("http://localhost:4000/api/v1/user/register", {
       method: "POST",
       body: JSON.stringify({
