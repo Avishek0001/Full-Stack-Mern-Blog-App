@@ -31,7 +31,9 @@ const Login = () => {
         email: inputs.email,
         password: inputs.password
       }),
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        "Access-Control-Allow-Origin":"https://client-mern-blog-app.vercel.app",
+        'Content-Type': 'application/json' },
       credentials:'include'
     })
     if (response.status === 201) {
