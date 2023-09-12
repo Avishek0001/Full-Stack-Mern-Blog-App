@@ -15,7 +15,8 @@ mongoose.connect("mongodb+srv://Avishek-Mern-Blog:avishek2001@cluster0.uhuwjdg.m
 
 const userRoute= require("./routes/userRoute")
 const blogsRoutes = require("./routes/blogsRoute")
-app.use(cors({credentials:true, origin:['https://client-mern-blog-app.vercel.app'],methods:["POST", "GET", "PUT", "DELETE"]}))
+app.use(cors({ origin: 'https://client-mern-blog-app.vercel.app' }));
+// app.use(cors({credentials:true, origin:['https://client-mern-blog-app.vercel.app'],methods:["POST", "GET", "PUT", "DELETE"]}))
 app.use(express.json())
 app.use(cookieParser())
 app.get("/",(req,res)=>{
