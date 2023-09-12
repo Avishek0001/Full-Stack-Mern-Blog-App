@@ -32,7 +32,7 @@ const Login = () => {
         password: inputs.password
       }),
       headers: {
-        "Access-Control-Allow-Origin":"https://serverside-mern-blog-llvozs0h1-avishek0001.vercel.app",
+        "Access-Control-Allow-Origin":"*",
         'Content-Type': 'application/json' },
       credentials:'include'
     })
