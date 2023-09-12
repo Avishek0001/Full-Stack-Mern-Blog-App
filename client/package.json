@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "proxy": "http://localhost:4000",
+  "proxy": "https://serverside-mern-blog-llvozs0h1-avishek0001.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
