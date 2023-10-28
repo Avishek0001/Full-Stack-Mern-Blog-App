@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+* For this project, I have been facing a cors (Cross-origin resource sharing) error while hosting the server side and not being able to get the solution for this error. Still trying to solve this error,but if you want you can clone this repository and use on your local server.
+
 ## Available Scripts
 
 In the project directory, you can run:
