@@ -3,7 +3,7 @@ It is a full stack Mern application with a databse along with a backend.
 This project is still in progress and I am working on itss hosting issues.
 It is completely working project. Its' completely responsive application. MongoDB Express React Redux NodeJs are user in this project.
 
-# Featurs included in this project:
+# Features included in this project:
 * user features:
 
 * register and login users.
