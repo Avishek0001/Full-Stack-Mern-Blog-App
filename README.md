@@ -3,6 +3,12 @@ It is a full stack Mern application with a databse along with a backend.
 This project is still in progress and I am working on itss hosting issues.
 It is completely working project. Its' completely responsive application. MongoDB Express React Redux NodeJs are user in this project.
 
+Some Clips:
+
+![Screenshot (183)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/51b51450-e96b-44cd-8aa5-4bf981fc068a)
+![Screenshot (184)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/6d989998-aa5e-43f9-8a28-736efa1d519c)
+![Screenshot (186)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/00fa41cb-43ac-4e91-a773-e4897af64173)
+
 # Features included in this project:
 * user features:
 
@@ -46,4 +52,9 @@ Open command line in the cloned folder,
 * To run backend type command node server in main folder.
 * To install dependencies for frontend , run npm install in /client folder.
 * To run frontend type command npm start in /client folder.
-* Open localhost:3000 in the browser. And application will be up and running. Here are some images of application:
+* Open localhost:3000 in the browser. And application will be up and running. Here are some images of the application:
+
+
+IMPORTANT NOTE:
+
+In the Above Project, I have been facing some issues while deploying it on vercel ,render or netlify. If anyone can help me fix the error related to Cors and deployment, then feel free to send me a PR.
