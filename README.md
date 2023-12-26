@@ -6,7 +6,7 @@ It is a completely working project. It's a completely responsive application. Mo
 Some Clips:
 
 ![Screenshot (192)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/a9511784-d7e0-46ac-a86e-7305fb35ff2f)
-![Screenshot (184)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/6d989998-aa5e-43f9-8a28-736efa1d519c)
+![Screenshot (195)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/fd099df4-371b-403f-b740-a06db9b60ff9)
 ![Screenshot (194)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/85c01b5d-4383-45e1-8385-717a6a4c8bdb)
 ![Screenshot (193)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/60aae8b7-9794-4bb5-bc1c-7a1e9570d266)
 
