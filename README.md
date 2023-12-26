@@ -7,7 +7,9 @@ Some Clips:
 
 ![Screenshot (183)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/51b51450-e96b-44cd-8aa5-4bf981fc068a)
 ![Screenshot (184)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/6d989998-aa5e-43f9-8a28-736efa1d519c)
-![Screenshot (186)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/00fa41cb-43ac-4e91-a773-e4897af64173)
+![Screenshot (194)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/85c01b5d-4383-45e1-8385-717a6a4c8bdb)
+![Screenshot (193)](https://github.com/Avishek0001/Full-Stack-Mern-Blog-App/assets/92811606/60aae8b7-9794-4bb5-bc1c-7a1e9570d266)
+
 
 # Features included in this project:
 * user features:
