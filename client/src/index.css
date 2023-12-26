@@ -33,6 +33,13 @@ img {
   margin-top: 15px;
 }
 
+.logo-photo {
+  height: 25px;
+  width: 25px;
+  margin: auto 15px auto 20px;
+
+}
+
 form.input {
   position: fixed;
   margin-bottom: 5px;
@@ -52,6 +59,7 @@ div.entry {
   padding-left: 20px;
   color: inherit;
 }
+
 div.box {
   position: absolute;
   height: auto;
@@ -112,6 +120,29 @@ time {
 
 }
 
+.field-group{
+  position: relative;
+}
+
+.input-field{
+  width: 100%;
+  height: 50px;
+  padding-left: 60px;
+  background-color: #ececec;
+}
+
+.icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
 button {
   cursor: pointer;
   width: 100%;
@@ -125,7 +156,42 @@ button {
 
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-left: auto;
+}
+
+.login-logout {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1.5px solid #000;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.blog-buttons {
+  font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 div.content p {
   line-height: 1rem;
@@ -287,6 +353,7 @@ div.post-page div.author {
   .blog-app-heading {
     font-size: 0.5rem;
     padding-left: 5px;
+
   }
 
 
