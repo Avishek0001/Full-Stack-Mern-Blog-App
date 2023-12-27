@@ -38,7 +38,7 @@ const BlogCard = ({
 
 
   return (
-    // {/* <Link to={`/get-blog/${id}`}> */}
+    
     <div className='entry container'>
 
       <div className='post' >
