@@ -40,13 +40,13 @@ const Header = ({ username }) => {
       {isLogin && (
         <div className='button-container'>
           <Tabs textColor="inherit" value={value} onChange={(e, val) => setValue(val)} >
-            <Link to="/blogs" style={{ color: "#000", margin: "10px" }}>
+            <Link to="/blogs" style={{ color: "#000" }}>
               <button className='blog-buttons btn btn-outline-dark' >All Blogs</button>
             </Link>
-            <Link to="/my-blogs" className='blog-buttons' style={{ color: "#000", margin: "10px" }}>
+            <Link to="/my-blogs" className='blog-buttons' style={{ color: "#000" }}>
               <button className='blog-buttons btn btn-outline-dark'>My Blogs</button>
             </Link>
-            <Link to="/create-blogs" style={{ color: "#000", margin: "10px" }}>
+            <Link to="/create-blogs" style={{ color: "#000" }}>
               <button className='blog-buttons btn btn-outline-dark'>Create Blogs</button>
             </Link>
 
@@ -64,7 +64,7 @@ const Header = ({ username }) => {
               Login
             </button>
               </Link>
-          <Link to="/register" style={{ marginLeft: "20px", color: "#000"}}>
+          <Link to="/register" style={{ marginLeft: "20px",marginRight:"10px", color: "#000"}}>
 
             <button className='btn btn-outline-dark login-logout'>
               Register
@@ -77,7 +77,7 @@ const Header = ({ username }) => {
         {isLogin && (
           <>
             <h2 style={{ color: "#000" }}>{username}</h2>
-            <button className='btn btn-outline-dark login-logout' onClick={logout} sx={{ margin: 1, color: "black" }}>
+            <button className='btn btn-outline-dark login-logout' onClick={logout} sx={{  color: "black" }}>
               Logout
             </button>
           </>

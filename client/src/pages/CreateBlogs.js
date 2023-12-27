@@ -39,17 +39,21 @@ const CreateBlogs = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <Box
-          width={"70%"}
-          height={"auto"}
-          border={3}
-          borderRadius={10}
-          padding={3}
-          margin="auto"
-          boxShadow={"10px 10px 20px #ccc"}
-          display="flex"
-          flexDirection={"column"}
-          marginTop="30px"
+        <div
+        className="create-box"
+        style={{
+
+          width:"80%",
+          height:"auto",
+          border:3,
+          borderRadius:10,
+          padding:3,
+          margin:"auto",
+          boxShadow:"10px 10px 20px #ccc",
+          display:"flex",
+          flexDirection:"column",
+          marginTop:"30px"
+        }}
         >
           <h1 style={{ "padding": "30px" }}>
             Create A New Post
@@ -70,8 +74,8 @@ const CreateBlogs = () => {
           />
           <Editor value={description}
             onChange={setDescription} />
-          <button type='submit' style={{ marginTop: '5px' }}>Create post</button>
-        </Box>
+          <button type='submit' style={{ marginTop: '5px', backgroundColor:"#000"  }}>Create post</button>
+        </div>
       </form>
 
     </>

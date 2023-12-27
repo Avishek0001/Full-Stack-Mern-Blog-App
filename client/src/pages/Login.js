@@ -20,7 +20,7 @@ const Login = () => {
       [e.target.name]: e.target.value
     }))
   }
-
+  
   async function handleSubmit(event) {
     event.preventDefault();
 
@@ -61,7 +61,7 @@ const Login = () => {
           padding={5}
           borderRadius={5}
         >
-          <Typography variant='h4' padding={2} textAlign={'center'} marginBottom={5}>LOGIN</Typography>
+          <Typography variant='h4' padding={5} textAlign={'center'} marginBottom={5}>Welcome Back</Typography>
           <div className='field-group'>
             <span className='icon'>
             <i class="uil uil-at"></i>
@@ -96,8 +96,8 @@ const Login = () => {
           {/* <TextField placeholder='Email' value={inputs.email} onChange={handleChange} name='email' margin='normal' type='email' required /> */}
           {/* <TextField placeholder='Password' value={inputs.password} onChange={handleChange} name='password' margin='normal' type='password' required /> */}
 
-          <Button type='submit' sx={{ borderRadius: 3, marginTop: 3 }} variant='contained' color='primary'>Login</Button>
-          <Button onClick={() => navigate('/register')} sx={{ borderRadius: 3, marginTop: 3 }}>Create Account </Button>
+          <button type='submit' variant='contained' style={{background:"#000", marginTop:"20px", width:"70px", borderRadius: "25px"}}>Login</button>
+          <button onClick={() => navigate('/register')} style={{ background:"none", color:"#000"  }}>Don't Have An Account? <span style={{textDecoration:"Underline", fontWeight:"700"}}> Create One</span> </button>
 
         </Box>
       </form>

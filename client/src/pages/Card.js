@@ -13,64 +13,69 @@ const BlogCard = ({
   userId
 }) => {
   const navigate = useNavigate()
-  const handleEdit = () =>{
+  const handleEdit = () => {
     navigate(`/blog-details/${id}`)
   }
 
-const handleDelete = async()=>{
-  try{
-    const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`,{
-      method:'DELETE'
-    }
-    )
-    if (response.status === 200) {
-      toast.success('Blog deleted');
-      window.location.reload();
-      navigate('/my-blogs')
-    } else {
-      console.log(response.statusText);
-    }
+  const handleDelete = async () => {
+    try {
+      const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`, {
+        method: 'DELETE'
+      }
+      )
+      if (response.status === 200) {
+        toast.success('Blog deleted');
+        window.location.reload();
+        navigate('/my-blogs')
+      } else {
+        console.log(response.statusText);
+      }
 
-  }catch(err){
-    console.log(err);
+    } catch (err) {
+      console.log(err);
+    }
   }
-}
 
 
   return (
-// {/* <Link to={`/get-blog/${id}`}> */}
+    // {/* <Link to={`/get-blog/${id}`}> */}
     <div className='entry container'>
 
-      <div className='post'>
-      
+      <div className='post' >
+
         <Link to={`/get-blog/${id}`}>
-        <img src={image} alt='' />
+          <img src={image} alt='' />
 
         </Link>
-        <div className='text'>
-        <Link to={`/get-blog/${id}`}>
-          <h2 style={{ color:"#000"}}> {title}</h2>
-        </Link>
-        <div className='info'>
-
-          <h4> {username}</h4>
-          <time>{time}</time>
+          </div>
+        <div className='text' >
+          <Link to={`/get-blog/${id}`}>
+            <h2 style={{ color: "#000"}}> {title}</h2>
+          </Link>
         </div>
+
+
+        <div className='info' >
+      
+            <h4 > {username}</h4>
+    <div className='time' style={{   position:"absolute",top:"15px" }}>
+            <time>{time}</time>
+    </div>
+          </div>
+
           {/* <p dangerouslySetInnerHTML={{__html:description}}/> */}
-        </div>
         {userId && (
-        <div className='box'>
-        <EditNoteRoundedIcon onClick={handleEdit}/>
-        <DeleteOutlineIcon onClick={handleDelete}/>
-        </div>
-      
-      )}
-      </div>
+          <div className='box'>
+            <EditNoteRoundedIcon onClick={handleEdit} />
+            <DeleteOutlineIcon onClick={handleDelete} />
+          </div>
+
+        )}
 
 
 
     </div>
-        // {/* </Link> */}
+    // {/* </Link> */}
 
   )
 }

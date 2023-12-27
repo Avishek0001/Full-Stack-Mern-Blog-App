@@ -101,12 +101,8 @@ const Register = () => {
             />
           </div>
 
-          {/* <TextField placeholder='Name' value={inputs.name} onChange={handleChange} name='name' margin='normal' type='text' required /> */}
-          {/* <TextField placeholder='Email' value={inputs.email} onChange={handleChange} name='email' margin='normal' type='email' required /> */}
-          {/* <TextField placeholder='Password' value={inputs.password} onChange={handleChange} name='password' margin='normal' type='password' required /> */}
-
-          <Button type='submit' sx={{ borderRadius: 3, marginTop: 3 }} variant='contained' color='primary'>Register</Button>
-          <Button onClick={() => navigate('/login')} sx={{ borderRadius: 3, marginTop: 3 }}>Login</Button>
+          <button type='submit' style={{background:"#000", marginTop:"20px", width:"100px", borderRadius: "25px"}} variant='contained' >Register</button>
+          <button onClick={() => navigate('/login')} style={{ background:"none", color:"#000" , marginTop:"10px", fontWeight:"500" }}>Login</button>
 
         </Box>
 
