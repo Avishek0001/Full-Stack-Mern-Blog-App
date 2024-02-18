@@ -18,13 +18,10 @@ const BlogDetails = () => {
             const response = await fetch(`http://localhost:4000/api/v1/blogs/get-blog/${id}`)
             if (response.ok) {
                 const data = await response.json();
-              
                 if (data?.success) {
                   setBlog(data?.blog);  
                   setInputs({
-                    title: data?.blog.title,
-                  
-                    
+                    title: data?.blog.title, 
                   });  
                 setDescription(data?.blog.description)  
                 }

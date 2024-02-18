@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import Editor from './Editor'
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
@@ -12,21 +12,21 @@ const CreateBlogs = () => {
   const [file, setFiles] = useState('');
 
 
+  const data = new FormData();
 
- async function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    const data = new FormData();
     data.set('user', id);
     data.set('title', title);
     data.set('description', description);
     data.append('image', file.name)
     data.append('image', file)
-
+    
     const response = await fetch('http://localhost:4000/api/v1/blogs/create-blog', {
       method: 'POST',
       body: data
     })
-    if(response.status === 200){
+    if (response.status === 200) {
       toast.success('Blog Created')
       navigate('/my-blogs')
       window.location.reload();
@@ -34,26 +34,26 @@ const CreateBlogs = () => {
     }
 
   }
- 
+
 
   return (
     <>
       <form onSubmit={handleSubmit}>
         <div
-        className="create-box"
-        style={{
+          className="create-box"
+          style={{
 
-          width:"80%",
-          height:"auto",
-          border:3,
-          borderRadius:10,
-          padding:3,
-          margin:"auto",
-          boxShadow:"10px 10px 20px #ccc",
-          display:"flex",
-          flexDirection:"column",
-          marginTop:"30px"
-        }}
+            width: "80%",
+            height: "auto",
+            border: 3,
+            borderRadius: 10,
+            padding: 3,
+            margin: "auto",
+            boxShadow: "10px 10px 20px #ccc",
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "30px"
+          }}
         >
           <h1 style={{ "padding": "30px" }}>
             Create A New Post
@@ -64,7 +64,7 @@ const CreateBlogs = () => {
             placeholder={'Title'}
             value={title}
             onChange={ev => setTitle(ev.target.value)}
-          required
+            required
           />
 
           <input type="file"
@@ -74,7 +74,7 @@ const CreateBlogs = () => {
           />
           <Editor value={description}
             onChange={setDescription} />
-          <button type='submit' style={{ marginTop: '5px', backgroundColor:"#000"  }}>Create post</button>
+          <button type='submit' style={{ marginTop: '5px', backgroundColor: "#000" }}>Create post</button>
         </div>
       </form>
 

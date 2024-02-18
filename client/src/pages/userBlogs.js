@@ -29,12 +29,13 @@ const UserBlogs = () => {
   return (
     <div>
       {blogs && blogs.length > 0 ? (blogs.map((blog) => (
+       
         <BlogCard
           id={blog._id}
           userId={true}
           title={blog.title}
           description={blog.description}
-          image={require(`../uploads/${blog.image}`)}
+          image={require(`../uploads/${blog?.image}`)}
           username={blog.user.username}
           time={blog.createdAt}
         />))) : (
