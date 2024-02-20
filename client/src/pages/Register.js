@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Box, Typography, TextField, Button } from '@mui/material';
 import toast from 'react-hot-toast';
+import { baseUrl } from '../URL';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const Register = () => {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/api/v1/user/register", {
+      const response = await fetch(`${baseUrl}/api/v1/user/register`, {
         method: "POST",
         body: JSON.stringify({
           username: inputs.name,

@@ -4,6 +4,7 @@ import Editor from './Editor'
 import { useNavigate } from 'react-router-dom';
 import { Box } from '@mui/material';
 import toast from 'react-hot-toast'
+import { baseUrl } from '../URL';
 
 const BlogDetails = () => {
 
@@ -15,7 +16,7 @@ const BlogDetails = () => {
     const id = useParams().id
     const getBlogDetails= async ()=>{
         try{
-            const response = await fetch(`http://localhost:4000/api/v1/blogs/get-blog/${id}`)
+            const response = await fetch(`${baseUrl}/api/v1/blogs/get-blog/${id}`)
             if (response.ok) {
                 const data = await response.json();
                 if (data?.success) {
@@ -48,7 +49,7 @@ const BlogDetails = () => {
 
  async function handleSubmit(e) {
      e.preventDefault()   
-    const response = await fetch(`http://localhost:4000/api/v1/blogs/update-blog/${id}`, {
+    const response = await fetch(`${baseUrl}/api/v1/blogs/update-blog/${id}`, {
       method: 'PUT',
       body: JSON.stringify({
         title: inputs.title,

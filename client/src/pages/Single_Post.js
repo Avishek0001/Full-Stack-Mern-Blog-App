@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import {formatISO9075} from "date-fns"
+import {formatISO9075} from "date-fns";
+import { baseUrl } from '../URL';
+
 
 const Single_Post = () => {
 const [postInfo , setPostInfo] = useState(null);
@@ -8,7 +10,7 @@ const {id} = useParams();
 useEffect(()=>{
   try{
 
-    fetch(`http://localhost:4000/api/v1/blogs/get-blog/${id}`)
+    fetch(`${baseUrl}/api/v1/blogs/get-blog/${id}`)
     .then((response)=>{
       response.json().then(postInfo=>{
         setPostInfo(postInfo?.blog)

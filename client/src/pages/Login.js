@@ -4,6 +4,7 @@ import { Box, Typography, TextField, Button } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { authActions } from '../Store';
 import toast from 'react-hot-toast';
+import { baseUrl } from '../URL';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Login = () => {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const response = await fetch("http://localhost:4000/api/v1/user/login", {
+    const response = await fetch(`${baseUrl}/api/v1/user/login`, {
       method: "POST",
       body: JSON.stringify({
         email: inputs.email,

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import BlogCard from "./Card"
+import { baseUrl } from '../URL'
 
 const UserBlogs = () => {
   const [blogs, setBlogs] = useState([])
   const getUserBlogs = async () => {
     try {
       const id = localStorage.getItem('userId')
-      const response = await fetch(`http://localhost:4000/api/v1/blogs/user-blog/${id}`, {
+      const response = await fetch(`${baseUrl}/api/v1/blogs/user-blog/${id}`, {
         method: "GET",
       })
       if (response.status === 200) {

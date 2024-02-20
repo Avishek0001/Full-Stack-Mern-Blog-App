@@ -3,6 +3,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { Link, useNavigate } from 'react-router-dom';
 import EditNoteRoundedIcon from '@mui/icons-material/EditNoteRounded';
 import toast from 'react-hot-toast';
+import { baseUrl } from '../URL';
 
 const BlogCard = ({
   title,
@@ -19,7 +20,7 @@ const BlogCard = ({
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/v1/blogs/delete-blog/${id}`, {
+      const response = await fetch(`${baseUrl}/api/v1/blogs/delete-blog/${id}`, {
         method: 'DELETE'
       }
       )

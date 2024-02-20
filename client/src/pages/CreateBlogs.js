@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Editor from './Editor'
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import { baseUrl } from '../URL';
 
 const CreateBlogs = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const CreateBlogs = () => {
     data.append('image', file.name)
     data.append('image', file)
     
-    const response = await fetch('http://localhost:4000/api/v1/blogs/create-blog', {
+    const response = await fetch(`${baseUrl}/api/v1/blogs/create-blog`, {
       method: 'POST',
       body: data
     })
