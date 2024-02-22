@@ -16,8 +16,7 @@ const PORT = process.env.PORT || 4000
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
-// mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
-// console.log(DATABASE_URL);
+
 connectDB();
 
 
