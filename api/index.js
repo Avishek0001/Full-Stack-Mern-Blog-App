@@ -11,7 +11,7 @@ const connectDB = require("./config/db")
 
 dotenv.config();
 
-const BASE_URL = 4000
+const PORT = process.env.PORT || 4000
 
 
 const app = express();
@@ -29,6 +29,6 @@ app.use(cookieParser())
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/blogs", blogsRoutes);
 
-app.listen(BASE_URL, () => {
+app.listen(PORT, () => {
     console.log("Server is running");
 })
