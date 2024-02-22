@@ -26,6 +26,11 @@ const blogsRoutes = require("./routes/blogsRoute")
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 app.use(express.json())
 app.use(cookieParser())
+
+
+app.get("/", (req,res)=>{
+    res.send("Hello")
+});
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/blogs", blogsRoutes);
 
