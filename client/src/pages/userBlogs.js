@@ -36,7 +36,8 @@ const UserBlogs = () => {
           userId={true}
           title={blog.title}
           description={blog.description}
-          image={require(`../uploads/${blog?.image}`)}
+          // image={require(`../uploads/${blog?.image}`)}
+          image={'http://localhost:4000/uploads/'+ blog?.image}
           username={blog.user.username}
           time={blog.createdAt}
         />))) : (

@@ -29,7 +29,8 @@ const Blogs = () => {
         <BlogCard 
         id={blog._id}
         title={blog?.title}
-        image={require(`../uploads/${blog?.image}`)}
+        // image={require(`../uploads/${blog?.image}`)}
+        image={'http://localhost:4000/uploads/'+ blog?.image}
         username={blog?.user?.username}
         time={formatISO9075(new Date(blog?.createdAt))}
         />

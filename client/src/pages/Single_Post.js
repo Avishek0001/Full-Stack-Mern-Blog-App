@@ -28,7 +28,8 @@ useEffect(()=>{
   return (
     <div className='post-page'>
       <div className='image' >
-        <img src={require(`../uploads/${postInfo?.image}`)}/>
+        <img src={'http://localhost:4000/uploads/'+ postInfo?.image}/>
+        {/* <img src={require(`../uploads/${postInfo?.image}`)}/> */}
       </div>
         <h1>{postInfo.title}</h1>
         <time>{formatISO9075(new Date(postInfo?.createdAt))}</time>
