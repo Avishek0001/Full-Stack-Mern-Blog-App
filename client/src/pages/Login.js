@@ -6,7 +6,7 @@ import { authActions } from '../Store';
 import toast from 'react-hot-toast';
 import { baseUrl } from '../URL';
 
-const Login = () => {
+const Login = ({ isUserAuthenticated }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch()
 
@@ -39,7 +39,8 @@ const Login = () => {
       localStorage.setItem("userId", data?.user._id)
       dispatch(authActions.login())
       toast.success('Login successful');
-      navigate("/")
+       isUserAuthenticated(true) 
+        navigate("/")
     } else {
       toast.success('Login failed');
     }
