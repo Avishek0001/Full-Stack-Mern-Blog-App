@@ -22,7 +22,7 @@ connectDB();
 
 const userRoute = require("./routes/userRoute")
 const blogsRoutes = require("./routes/blogsRoute")
-app.use(cors())
+app.use(cors({ credentials: true, origin: 'https://mern-blog-app-eight-henna.vercel.app/' }))
 app.use(express.json())
 app.use(cookieParser())
 
