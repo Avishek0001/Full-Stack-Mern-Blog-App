@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { authActions } from '../Store';
 import toast from 'react-hot-toast';
 import { baseUrl } from '../URL';
+import logo from "../photos/logo.png";
 
 const Login = ({ isUserAuthenticated }) => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const Login = ({ isUserAuthenticated }) => {
       [e.target.name]: e.target.value
     }))
   }
-  
+
   async function handleSubmit(event) {
     event.preventDefault();
 
@@ -39,8 +40,8 @@ const Login = ({ isUserAuthenticated }) => {
       localStorage.setItem("userId", data?.user._id)
       dispatch(authActions.login())
       toast.success('Login successful');
-       isUserAuthenticated(true) 
-        navigate("/")
+      isUserAuthenticated(true)
+      navigate("/")
     } else {
       toast.success('Login failed');
     }
@@ -63,43 +64,45 @@ const Login = ({ isUserAuthenticated }) => {
           padding={5}
           borderRadius={5}
         >
-          <Typography variant='h4' padding={5} textAlign={'center'} marginBottom={5}>Welcome Back</Typography>
+
+          <img className='logo-photo' style={{ height: "60px", width: "50px", paddingBottom: "10px" }} src={logo} />
+          <h3 className='blog-app-heading' style={{ paddingBottom: "10px" }}> Blog App</h3>
           <div className='field-group'>
             <span className='icon'>
-            <i class="uil uil-at"></i>
+              <i class="uil uil-at"></i>
             </span>
             <input
-            className='input-field'
+              className='input-field'
               type="email"
               placeholder="Email"
               value={inputs.email}
               onChange={handleChange}
               name="email"
               required
-              // style={{ margin: 'normal' }}
+            // style={{ margin: 'normal' }}
             />
           </div>
           <div className='field-group'>
             <span className='icon'>
-            <i class="uil uil-key-skeleton-alt"></i>
+              <i class="uil uil-key-skeleton-alt"></i>
             </span>
             <input
-            className='input-field'
+              className='input-field'
               type="password"
               placeholder='Password'
               value={inputs.password}
               onChange={handleChange}
               name='password'
               required
-              // style={{ margin: 'normal' }}
+            // style={{ margin: 'normal' }}
             />
           </div>
 
           {/* <TextField placeholder='Email' value={inputs.email} onChange={handleChange} name='email' margin='normal' type='email' required /> */}
           {/* <TextField placeholder='Password' value={inputs.password} onChange={handleChange} name='password' margin='normal' type='password' required /> */}
 
-          <button type='submit' variant='contained' style={{background:"#000", marginTop:"20px", width:"70px", borderRadius: "25px"}}>Login</button>
-          <button onClick={() => navigate('/register')} style={{ background:"none", color:"#000"  }}>Don't Have An Account? <span style={{textDecoration:"Underline", fontWeight:"700"}}> Create One</span> </button>
+          <button type='submit' variant='contained' style={{ background: "#000", marginTop: "20px", width: "70px", borderRadius: "25px" }}>Login</button>
+          <button onClick={() => navigate('/register')} style={{ background: "none", color: "#000" }}>Don't Have An Account? <span style={{ textDecoration: "Underline", fontWeight: "700" }}> Create One</span> </button>
 
         </Box>
       </form>

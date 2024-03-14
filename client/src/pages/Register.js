@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Typography, TextField, Button } from '@mui/material';
 import toast from 'react-hot-toast';
 import { baseUrl } from '../URL';
+import logo from "../photos/logo.png"
 
 const Register = () => {
   const navigate = useNavigate();
@@ -56,7 +57,9 @@ const Register = () => {
           padding={5}
           borderRadius={5}
         >
-          <Typography variant='h4' padding={3} textAlign={'center'} marginBottom={5}>REGISTER</Typography>
+          <img className='logo-photo' style={{ height: "60px", width: "50px", paddingBottom: "10px" }} src={logo} />
+          <h3 className='blog-app-heading' style={{ paddingBottom: "10px" }}> Blog App</h3>
+
 
           <div className='field-group'>
             <span className='icon'>
@@ -75,7 +78,7 @@ const Register = () => {
 
           <div className='field-group'>
             <span className='icon'>
-            <i class="uil uil-at"></i>
+              <i class="uil uil-at"></i>
             </span>
             <input
               className='input-field'
@@ -102,8 +105,8 @@ const Register = () => {
             />
           </div>
 
-          <button type='submit' style={{background:"#000", marginTop:"20px", width:"100px", borderRadius: "25px"}} variant='contained' >Register</button>
-          <button onClick={() => navigate('/login')} style={{ background:"none", color:"#000" , marginTop:"10px", fontWeight:"500" }}>Login</button>
+          <button type='submit' style={{ background: "#000", marginTop: "20px", width: "100px", borderRadius: "25px" }} variant='contained' >Register</button>
+          <button onClick={() => navigate('/login')} style={{ background: "none", color: "#000", marginTop: "10px", fontWeight: "500" }}>Login</button>
 
         </Box>
 
